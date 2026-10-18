@@ -50,7 +50,7 @@
       const minutes = Math.floor((remaining % 3600000) / 60000);
 
       document.getElementById("remaining").textContent =
-        `${days}d ${hours}h ${minutes}min;
+        `${days}d ${hours}h ${minutes}min`;
 
       const percent = total > 0
         ? Math.max(0, Math.min(100, remaining / total * 100))
