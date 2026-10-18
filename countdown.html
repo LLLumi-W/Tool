@@ -8,7 +8,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 16px;
+      margin: 0;
+      padding: 10px 12px;
     }
     .bar {
       width: 100%;
@@ -19,15 +20,28 @@
     }
     .progress {
       height: 100%;
-      width: 100%;
+      width: 0%;
       background: #0d9488;
       transition: width 1s linear;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .header h3,
+    .header p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
+  <div class="header">
   <h3 id="title">Compling</h3>
   <p id="remaining"></p>
+  </div>
   <div class="bar">
     <div class="progress" id="progress"></div>
   </div>
