@@ -34,9 +34,9 @@
 
   <script>
     const params = new URLSearchParams(location.search);
-    const title = params.get("title") || "Phon.HA1";
-    const start = new Date(params.get("start") || "2026-10-16T00:00:00");
-    const end = new Date(params.get("end") || "2026-10-21T13:15:00");
+    const title = params.get("title");
+    const start = new Date(params.get("start"));
+    const end = new Date(params.get("end"));
 
     document.getElementById("title").textContent = title;
 
